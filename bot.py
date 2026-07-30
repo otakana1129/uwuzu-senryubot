@@ -1,5 +1,6 @@
 print("BOT START")
-print("開始")2 3timeline = client.get_timeline(limit=50)
+print("開始")
+timeline = client.get_timeline(limit=50)
 print("timeline:", timeline)
 print("件数:", len(timeline))
 import os
@@ -51,8 +52,8 @@ timeline = client.get_timeline(limit=50)
 new_seen = set(seen)
 
 for post in timeline:
-print("ループ実行")3   
-print(post.text_content)
+print("ループ実行")
+    print(post.text_content)
     post_id = str(post.id)
 
     if post_id in seen:
