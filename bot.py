@@ -1,6 +1,6 @@
 print("開始")2 3timeline = client.get_timeline(limit=50)
-4 5print("timeline:", timeline)
-6print("件数:", len(timeline))
+print("timeline:", timeline)
+print("件数:", len(timeline))
 import os
 from uwuzu import Uwuzu
 
@@ -75,6 +75,7 @@ print(post.text_content)
 with open(SEEN_FILE, "w", encoding="utf-8") as f:
     f.write("\n".join(new_seen))
 timeline = client.get_timeline(limit=50)
+print("BOT START")2 3timeline = client.get_timeline(limit=50)4 5print("timeline =", timeline)6print("件数 =", len(timeline))7 8for post in timeline:9    print("投稿発見")10    print(post)11 12print("BOT END")
 
 print("取得件数:", len(timeline))
 
