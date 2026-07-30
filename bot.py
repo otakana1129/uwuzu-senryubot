@@ -47,7 +47,8 @@ timeline = client.get_timeline(limit=50)
 new_seen = set(seen)
 
 for post in timeline:
-
+print("ループ実行")3   
+print(post.text_content)
     post_id = str(post.id)
 
     if post_id in seen:
