@@ -1,3 +1,6 @@
+print("開始")2 3timeline = client.get_timeline(limit=50)
+4 5print("timeline:", timeline)
+6print("件数:", len(timeline))
 import os
 from uwuzu import Uwuzu
 
