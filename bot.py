@@ -70,3 +70,9 @@ for post in timeline:
 
 with open(SEEN_FILE, "w", encoding="utf-8") as f:
     f.write("\n".join(new_seen))
+timeline = client.get_timeline(limit=50)
+
+print("取得件数:", len(timeline))
+
+for post in timeline:
+    print("投稿:", post.text_content)
