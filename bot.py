@@ -1,3 +1,4 @@
+print("BOT START")
 print("開始")2 3timeline = client.get_timeline(limit=50)
 print("timeline:", timeline)
 print("件数:", len(timeline))
