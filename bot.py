@@ -6,15 +6,11 @@ TOKEN = os.environ["UWUZU_TOKEN"]
 
 client = Uwuzu(DOMAIN, TOKEN)
 
-print("BOT START")
+me = client.get_me()
 
-try:
-    me = client.get_me()
-    print("ログイン成功")
-    print(me)
+print("BOT:", me["userid"])
+print("フォロワー数:", me["follower_cnt"])
 
-except Exception as e:
-    print("ログイン失敗")
-    print(e)
-
-print("BOT END")
+print("フォロワー一覧:")
+for f in me["follower"]:
+    print("-", f)
